@@ -1,0 +1,101 @@
+#vidriera {
+  min-height: 790px;
+  background-image: url(/img/ba1.jpg);
+  text-align: end;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  position: relative; 
+}
+
+
+/* elemento para oscurecer la vidriera */
+
+#vidriera .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7); 
+}
+
+#vidriera h1,
+#vidriera h4,
+#vidriera #botones {
+  position: relative;
+  z-index: 1;
+}
+
+#vidriera h1{
+    font-size: 50px;
+    padding-top: 280px;
+    padding-right: 180px;
+}
+
+#vidriera h4{
+    padding-right: 180px;
+    padding-left: 50vw;
+}
+
+#vidriera #botones{
+    padding-top: 10px;
+    padding-right: 180px;
+}
+
+#honolulu{
+    background-image: url(/TP1/img/honolulu.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#playa {
+    margin-top: 20px;
+}
+
+#playa h2{
+    margin-top: 10px;
+}
+
+
+/* media querys para la vidriera */
+
+@media (max-width: 1500px) {
+  #vidriera h1 {
+    font-size: 40px;
+    padding-top: 200px;
+    padding-right: 60px;
+  }
+
+  #vidriera h4 {
+    padding-right: 60px;
+    padding-left: 50vw;
+  }
+
+  #vidriera #botones {
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #vidriera {
+    min-height: 500px;
+  }
+
+  #vidriera h1 {
+    font-size: 30px;
+    padding-top: 120px;
+    padding-right: 30px;
+  }
+
+  #vidriera h4 {
+    font-size: 18px;
+    padding-right: 30px;
+    padding-left: 40vw;
+  }
+
+  #vidriera #botones {
+    padding-top: 10px;
+    padding-right: 30px;
+  }
+}
